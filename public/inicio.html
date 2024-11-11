@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/CSS/inicio.css">
+    <title>MI PORTAFOLIO</title>
+</head>
+<body>
+     <!-- MENU ENCABEZADO -->
+     <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Marco</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>    
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="/IMG/fotoPerfil.jpg" alt="">
+            </div>
+            <h1>Marco Infante</h1>
+            <h2>Estudiante de Ingenieria de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/antonio.infanteagurto"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@marco.infante_"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="https://www.instagram.com/marco.infante_/"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.linkedin.com/in/marco-antonio-infante-agurto-6996612b8/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Marco Infante.</span> Actualmente estudio en el Instituto Valle Grande, estoy en el II ciclo, el cual durante todo este tiempo he realizado 2 proyectos, mientras exploren la pagina web podran ver de que trata.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            29-09-2005
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            983447196
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            infanteamarcoantonio3@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            San Luis de Cañete, Calle Comercio 304
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Habilidades</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>Html</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code-merge"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="/IMG/Automatizacion.png" alt="">
+                    <div class="overlay">
+                        <h3>Automatizacion</h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="/IMG/PaginaWeb2.png" alt="">
+                    <div class="overlay">
+                        <h3>Pagina Web</h3>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                San Luis, Comercio 304
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Telefono: 983447196
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: infanteamarcoantonio3@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/antonio.infanteagurto"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.tiktok.com/@marco.infante_"><i class="fa-brands fa-tiktok"></i></i></a>
+                <a href="https://www.instagram.com/marco.infante_/"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.linkedin.com/in/marco-antonio-infante-agurto-6996612b8/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="/JS/inicio.js"></script>
+</body>
+</html>
